@@ -1,0 +1,1 @@
+import{S as a,i,s as r,e as l,a as c,n,d as m}from"./chunks/index.js";function f(o){let e;return{c(){e=l("div"),e.textContent="Hello from vite"},m(t,s){c(t,e,s)},p:n,i:n,o:n,d(t){t&&m(e)}}}function p(o){return console.log("Hello from vite"),[]}class d extends a{constructor(e){super(),i(this,e,p,f,r,{})}}new d({target:document.getElementById("app")});

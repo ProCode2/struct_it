@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>struct.it</title>
+    {{ range .Css  }}
+        <link rel="stylesheet" href="{{ . }}" >
+    {{ end  }}
+    {{css "out.css"}}
+</head>
+
+<body class="w-screen h-screen">
+    <main class="w-full h-full flex flex-col">
+        {{template "partials/header" .}}
+        {{embed}}
+        {{template "partials/footer" .}}
+    </main>
+    {{ range .Js  }}
+        <script type="module" src="{{ . }}" ></script>
+    {{ end  }}
+</body>
+</html>
